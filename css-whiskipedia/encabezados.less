@@ -1,0 +1,67 @@
+.encabezado{
+    width: 100%;
+    min-width:310px;
+    height:60px;
+    background-color:@color--principal--;
+    display: flex;
+    
+
+    &_logo{
+        width:50%;
+        height: 100%;
+     
+    }
+    &_logo-img{
+        width: 100%;
+        height: 30px;
+        margin-top: 20px;
+        background-image: url('../imagenes-whiski/whiskypedia-logo-1.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &_iconos{
+        width: 50%;
+        height: 100%;
+       
+    }
+    &_iconos-lista{
+       display: flex;
+       list-style: none;
+       flex-flow: row nowrap;
+      justify-content: right;
+      margin-top: 15px;
+      gap: 10px;
+
+    }
+    &_iconos-lista-maleta{
+        .medidas-icono;
+        background-image: url('../imagenes-whiski/iconos-whisky/maletin.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &_icono-lista-persona{
+        .medidas-icono;
+        background-image: url('../imagenes-whiski/iconos-whisky/iconopersona.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &_icono-lista-lupa{
+        .medidas-icono;
+        background-image: url('../imagenes-whiski/iconos-whisky/lupa.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &_icono-lista-menu{
+        .medidas-icono;
+        background-image: url('../imagenes-whiski/iconos-whisky/menu.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+
+}

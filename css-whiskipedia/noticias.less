@@ -1,0 +1,129 @@
+.container-noticia{
+    min-width: 320px;
+    padding: 5px;
+    h2{
+      .titulosh2;
+      margin-bottom: 20px;
+    }
+  }
+  .noticias_items{
+    display: flex;
+    flex-flow:row wrap;
+   .buttun{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   }
+    button{
+      width:280px;
+      height: 50.9px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border: none;
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: @color--offwhi-;
+      background-color: @color--segundario-;
+  
+    }
+  }
+  .stylo_itemsnoticias{
+    background-color: @color--offwhi-;
+    padding: 5px;
+    
+    img{
+      position: relative;
+      left: calc(50% - 150px);
+      width:320px;
+      margin: 10px 0px 20px 0px;
+    }
+    h3{
+      color: @color--principal--;
+      font-weight: 500;
+      font-size: medium;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+    h4{
+       font-weight: 600;
+       font-size: 1.9rem;
+        padding: 10px;
+        color: @color--titulos-;
+    }
+    p{
+      margin-top: 15px;
+      padding: 10px;
+      font-size: 1.9rem;
+      font-weight: 600;
+      line-height: 20px;
+      font-family: Merriweather;
+    }
+    a{
+      color:@color--segundario-;
+    }
+  
+  }
+  
+  .footernoticias{
+    min-width:100%;
+    display: grid;
+    flex-wrap: nowrap;
+    grid-template-columns: 80% 20%;
+    p{
+      color: @color--titulos-;
+      font-size: 1.8rem;
+      font-weight: 900;
+      margin: 0%;
+    }
+    span{
+      color:gray;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    ul{
+      list-style: none;
+      display: flex;
+      
+    }
+  
+  }
+  .iconper{
+    width: 29px;
+    height: 29px;
+    background-image:url(../imagenes-whiski/person.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .iconmen{
+    width: 29px;
+    height: 29px;
+    background-image:url(../imagenes-whiski/mensajeria.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media(min-width:540px){
+    .stylo_itemsnoticias{
+      width: 50%;
+      img{
+        width: 280px;
+      }
+    }
+   .footernoticias{
+    display: flex;
+   }
+  }
+  @media(min-width:768px){
+    .stylo_itemsnoticias{
+      width:33.33%;
+    }
+  }
+
+  @media(min-width:1011px){
+    .stylo_itemsnoticias{
+      width:25%;
+    }
+  }

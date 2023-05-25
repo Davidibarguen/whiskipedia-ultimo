@@ -1,0 +1,724 @@
+.img768 {
+  width: auto;
+  opacity: 0;
+  position: absolute;
+}
+@media (min-width: 768px) {
+  .img768 {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    opacity: 1;
+    height: 400px;
+    width: 100%;
+    background-image: url('../imagenes-whiski/imagen710px.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .img {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-bottom: 30px;
+    height: 100px;
+    width: 500px;
+    background-image: url('../imagenes-whiski/taste.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .img768_texto {
+    padding: 35px;
+    display: block;
+  }
+  .img768_texto p {
+    text-align: center;
+    color: #fffbf5;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: 0.7;
+  }
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Merriweather', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  margin: 0%;
+}
+.medidas-icono {
+  width: 30px;
+  height: 30px;
+}
+.titulosh2 {
+  margin-top: 20px;
+  font-size: 3.8rem;
+  font-weight: 900;
+  color: #413543;
+  text-align: center;
+}
+.encabezado {
+  width: 100%;
+  min-width: 310px;
+  height: 60px;
+  background-color: #edc067;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.encabezado_logo {
+  width: 50%;
+  height: 100%;
+}
+.encabezado_logo-img {
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+  background-image: url('../imagenes-whiski/whiskypedia-logo-1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.encabezado_iconos {
+  width: 50%;
+  height: 100%;
+}
+.encabezado_iconos-lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-top: 15px;
+  gap: 10px;
+}
+.encabezado_iconos-lista-maleta {
+  width: 30px;
+  height: 30px;
+  background-image: url('../imagenes-whiski/iconos-whisky/maletin.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.encabezado_icono-lista-persona {
+  width: 30px;
+  height: 30px;
+  background-image: url('../imagenes-whiski/iconos-whisky/iconopersona.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.encabezado_icono-lista-lupa {
+  width: 30px;
+  height: 30px;
+  background-image: url('../imagenes-whiski/iconos-whisky/lupa.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.encabezado_icono-lista-menu {
+  width: 30px;
+  height: 30px;
+  background-image: url('../imagenes-whiski/iconos-whisky/menu.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.novedades {
+  min-width: 320px;
+}
+.novedades_items {
+  width: 100%;
+  display: -webkit-box;
+  overflow: auto;
+  overflow-y: hidden;
+}
+.stylo_items {
+  width: 100% ;
+  height: auto;
+  background-color: #fdebde;
+}
+.stylo_items section {
+  width: 100%;
+  text-align: center;
+  padding: 3px;
+}
+.stylo_items h2 {
+  margin-top: 40px;
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #413543;
+}
+.stylo_items img {
+  margin-top: 20px;
+  width: 280px;
+  height: 203.52px;
+}
+.stylo_items p {
+  line-height: 30px;
+  margin-top: 35px;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.stylo_items button {
+  width: 141.51px;
+  height: 55px;
+  border: none;
+  margin: 35px 0px 30px 0px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #fffbf5;
+  background-color: #d9ac53;
+}
+.stylo_fondo {
+  background-color: #fdebde;
+}
+.stylo_fondo section {
+  width: 100%;
+  min-width: 320px;
+  text-align: center;
+  padding: 3px;
+  margin: 0 auto;
+}
+.stylo_fondo h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #413543;
+}
+.stylo_fondo img {
+  width: 100%;
+}
+.stylo_fondo .fondo {
+  width: 100%;
+  height: 555.25px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../imagenes-whiski/1499277510_952631_1499277612_album_normal.jpg');
+}
+.stylo_fondo p {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.stylo_fondo button {
+  width: 141.51px;
+  height: 55px;
+  border: none;
+  margin: 35px 0px 30px 0px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #fffbf5;
+  background-color: #d9ac53;
+}
+@media (min-width: 540px) {
+  .stylo_items {
+    width: 50%;
+  }
+  .stylo_fondo {
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .stylo_items {
+    width: 33%;
+  }
+  .stylo_fondo {
+    width: 33%;
+  }
+}
+.container-destacados {
+  min-width: 320px;
+}
+.container-destacados h2 {
+  margin-top: 20px;
+  font-size: 3.8rem;
+  font-weight: 900;
+  color: #413543;
+  text-align: center;
+}
+.container-destacados .destacados_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  overflow: auto;
+  overflow-y: hidden;
+  padding: 40px 0px 80px 0px;
+  gap: 15px;
+  border-bottom: 1px solid #d9ac53;
+}
+.stylo_etiquetas {
+  min-width: 130px;
+  margin-top: 60px;
+  -webkit-box-shadow: 6px 3px 2px rgba(0, 0, 0, 0.03);
+          box-shadow: 6px 3px 2px rgba(0, 0, 0, 0.03);
+  text-align: center;
+}
+.stylo_etiquetas img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.stylo_etiquetas p {
+  margin: 6px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #10321e;
+}
+.stylo_etiquetas span {
+  color: gray;
+  font-size: 1.5rem;
+  margin-left: 7px;
+  text-decoration: line-through;
+}
+.stylo_etiquetas button {
+  height: 50px;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: #d9ac53;
+  color: #fffbf5;
+}
+@media (min-width: 610px) {
+  .stylo_etiquetas {
+    min-width: 100%;
+    padding: 15%;
+  }
+  .stylo_etiquetas img {
+    height: 300px;
+  }
+  .stylo_etiquetas p {
+    font-size: 2.8rem;
+  }
+  .stylo_etiquetas span {
+    font-size: 2.6rem;
+  }
+}
+@media (min-width: 768px) {
+  .stylo_etiquetas {
+    min-width: 20%;
+    padding: 5px;
+  }
+}
+.container-ofertas {
+  min-width: 320px;
+}
+.container-ofertas h2 {
+  margin-top: 20px;
+  font-size: 3.8rem;
+  font-weight: 900;
+  color: #413543;
+  text-align: center;
+}
+.container-ofertas .ofertas_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center ;
+      -ms-flex-pack: center ;
+          justify-content: center ;
+  height: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: auto;
+  padding: 40px 0px 80px 0px;
+  gap: 15px;
+  border-bottom: 1px solid #d9ac53;
+}
+.container-coleccion {
+  min-width: 320px;
+}
+.coleccion_items {
+  display: -webkit-box;
+  overflow: auto;
+  overflow-y: hidden;
+}
+.coleccion_items .stylo_item2 {
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  background-color: #fdebde;
+}
+.coleccion_items .stylo_item2 section {
+  width: inherit;
+  height: inherit;
+}
+.coleccion_items .stylo_item2 h2 {
+  margin-top: 30px;
+  color: #413543;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.coleccion_items .stylo_item2 img {
+  margin-top: 50px;
+  width: 295px;
+  height: 250px;
+}
+.coleccion_items .stylo_item2 button {
+  width: 97px;
+  height: 40px;
+  border: none;
+  margin: 55px 0px 30px 0px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #d9ac53;
+  color: #fffbf5;
+}
+.stylo_fondo2 {
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+  background-color: #fdebde;
+}
+.stylo_fondo2 section {
+  width: inherit;
+  height: inherit;
+  text-align: center;
+}
+.stylo_fondo2 h2 {
+  color: #413543;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.stylo_fondo2 img {
+  width: 100%;
+  height: 250px;
+}
+.stylo_fondo2 button {
+  width: 187px;
+  height: 40px;
+  border: none;
+  margin: 35px 0px 30px 0px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #d9ac53;
+  color: #fffbf5;
+}
+.stylo_fondo2 .fondo2 {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../imagenes-whiski/istanbuljack.webp');
+}
+@media (min-width: 540px) {
+  .stylo_item2 {
+    min-width: 50%;
+  }
+  .stylo_fondo2 {
+    min-width: 50%;
+  }
+  .coleccion_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 1000px) {
+  .stylo_item2 {
+    min-width: 25%;
+  }
+  .stylo_fondo2 {
+    min-width: 25%;
+  }
+}
+.container-ingresosnuevo {
+  min-width: 320px;
+}
+.container-ingresosnuevo h2 {
+  margin-top: 20px;
+  font-size: 3.8rem;
+  font-weight: 900;
+  color: #413543;
+  text-align: center;
+}
+.container-ingresosnuevo .ingresos_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: auto;
+  padding: 40px 0px 80px 0px;
+  gap: 15px;
+  border-bottom: 1px solid #d9ac53;
+}
+.container-cocteleria {
+  min-width: 320px;
+  padding: 15px;
+}
+.container-cocteleria h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 3.8rem;
+  font-weight: 900;
+  color: #413543;
+  text-align: center;
+}
+.cocteleria_contenido {
+  margin: 0 auto;
+  background-color: #fffbf5;
+  text-align: center;
+}
+.cocteleria_contenido img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 35px;
+}
+.cocteleria_contenido p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #413543;
+  line-height: 25px;
+  padding: 10px;
+}
+.cocteleria_contenido button {
+  width: 120px;
+  height: 55.9px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #fffbf5;
+  background-color: #d9ac53;
+}
+.container-noticia {
+  min-width: 320px;
+  padding: 5px;
+}
+.container-noticia h2 {
+  margin-top: 20px;
+  font-size: 3.8rem;
+  font-weight: 900;
+  color: #413543;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.noticias_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.noticias_items .buttun {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.noticias_items button {
+  width: 280px;
+  height: 50.9px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #fffbf5;
+  background-color: #d9ac53;
+}
+.stylo_itemsnoticias {
+  background-color: #fffbf5;
+  padding: 5px;
+}
+.stylo_itemsnoticias img {
+  position: relative;
+  left: calc(50% - 150px);
+  width: 320px;
+  margin: 10px 0px 20px 0px;
+}
+.stylo_itemsnoticias h3 {
+  color: #edc067;
+  font-weight: 500;
+  font-size: medium;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.stylo_itemsnoticias h4 {
+  font-weight: 600;
+  font-size: 1.9rem;
+  padding: 10px;
+  color: #413543;
+}
+.stylo_itemsnoticias p {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: Merriweather;
+}
+.stylo_itemsnoticias a {
+  color: #d9ac53;
+}
+.footernoticias {
+  min-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-grid-columns: 80% 20%;
+  grid-template-columns: 80% 20%;
+}
+.footernoticias p {
+  color: #413543;
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 0%;
+}
+.footernoticias span {
+  color: gray;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.footernoticias ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.iconper {
+  width: 29px;
+  height: 29px;
+  background-image: url(../imagenes-whiski/person.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.iconmen {
+  width: 29px;
+  height: 29px;
+  background-image: url(../imagenes-whiski/mensajeria.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 540px) {
+  .stylo_itemsnoticias {
+    width: 50%;
+  }
+  .stylo_itemsnoticias img {
+    width: 280px;
+  }
+  .footernoticias {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .stylo_itemsnoticias {
+    width: 33.33%;
+  }
+}
+@media (min-width: 1011px) {
+  .stylo_itemsnoticias {
+    width: 25%;
+  }
+}
+footer {
+  min-width: 320px;
+  padding: 15px;
+  background-color: #fdebde;
+}
+footer ul {
+  margin: 25px 20px 25px 0px;
+  list-style: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.logo_footer {
+  width: 210px;
+  height: 72.25px;
+  background-image: url(../imagenes-whiski/logo-foot.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 40px;
+}
+.iconface {
+  width: 50px;
+  height: 50px;
+  background-image: url(../imagenes-whiski/iconos-whisky/iconface.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 40px;
+}
+.iconinta {
+  width: 50px;
+  height: 50px;
+  background-image: url(../imagenes-whiski/iconos-whisky/instagram.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 40px;
+}
+.div-footer {
+  background-color: #40044f;
+  width: 100%;
+  height: 55px;
+}
+.div-footer p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fffbf5;
+}
+@media (min-width: 768px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}

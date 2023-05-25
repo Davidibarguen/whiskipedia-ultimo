@@ -1,0 +1,113 @@
+.novedades{
+    min-width: 320px;
+  &_items{
+        width: 100%;
+        display:-webkit-box;
+        overflow: auto;
+        overflow-y: hidden;
+       
+      
+    }
+    
+}
+
+.stylo_items{
+    width:100% ;
+    height:auto;
+    background-color:@color--terciario-;
+  section{
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+  
+  }
+  h2{
+    margin-top: 40px;
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:@color--titulos-;
+  }
+  img{
+     margin-top: 20px;
+      width:280px;
+      height:203.52px;
+  }
+ 
+  p{ 
+    line-height: 30px;
+    margin-top:35px;
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+  button{
+    width: 141.51px;
+    height: 55px;
+    border:none;
+    margin: 35px 0px 30px 0px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: @color--offwhi-;
+    background-color: @color--segundario-;
+  }
+}
+.stylo_fondo{
+    
+    background-color:@color--terciario-;
+  
+  section{
+    width:100%;
+    min-width: 320px;
+    text-align: center;
+    padding: 3px;
+    margin: 0 auto;
+  }
+  h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color:@color--titulos-;
+  }
+  img{
+    width:100%;
+  }
+  .fondo{
+    width: 100%;
+    height: 555.25px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../imagenes-whiski/1499277510_952631_1499277612_album_normal.jpg');
+  }
+  p{margin-bottom:5px;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  button{
+     width: 141.51px;
+    height: 55px;
+    border:none;
+    margin: 35px 0px 30px 0px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: @color--offwhi-;
+    background-color: @color--segundario-;
+  }
+}
+
+@media(min-width:540px) {
+  .stylo_items{
+    width: 50%;
+  }
+  .stylo_fondo{
+    width:50%;
+  }
+
+}
+@media(min-width:1000px){
+  .stylo_items{
+    width: 33%;
+  }
+  .stylo_fondo{
+    width:33%;
+  }
+}

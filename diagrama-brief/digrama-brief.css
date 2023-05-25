@@ -1,0 +1,534 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
+}
+html{
+    font-size: 62.5%;
+    
+}
+body{ background-color:  rgb(255, 233, 143);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    width:100%;
+    height: 90px;
+    background-color: black;
+    display: grid;
+    border-bottom: 2px solid red;
+}
+header h1{
+    align-self: center;
+    font-family: monospace;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    color: chocolate;
+    text-shadow: 10px 10px 125px white;
+}
+.presentacion{
+    width: 100%;
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    background-color: rgb(253, 249, 249);
+
+}
+.presentacion h2{
+    margin-bottom:20px;
+    text-align: center;
+    border-bottom: 1px solid red;
+    font-size: 3.5rem;
+}
+.presentacion span{
+    color: chocolate;
+    font-size: 6.6rem;
+}
+.presentacion p {
+    text-align: center;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.8rem;
+}
+.brief{
+ width: auto;
+ padding: 15px;
+ background-color: cornsilk;
+
+}
+.brief h2 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: gray;
+    text-align:center;
+}
+.brief article{
+    width:100%;
+    height:auto;
+    margin-bottom:20px ;
+    background-color: rgb(250, 240, 201);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 9px;
+ }
+ 
+.brief article h3{
+    color: red;
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 800;
+
+
+}
+.brief article p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-align: center;
+    padding: 5px;
+}
+.brief_items {
+    display: block;
+    padding: 20px;
+}
+   
+
+
+.brief_items :hover{
+    box-shadow: 5px 7px 120px black;
+ }
+
+ @media(min-width:520px){
+
+    .brief_items{
+        padding:20px;
+        display: flex;
+        justify-content:center ;
+        flex-wrap: wrap;
+        gap:20px;
+    }
+    .brief article{
+        width:45%;
+    }
+ }
+ @media(min-width:666px){
+    .brief_items{
+        gap: 5px;
+    }
+    .brief article{
+       
+        width:250px;
+    }
+
+ }
+.fotos-pagina{
+    width:auto;
+    padding: 2px;
+    position: relative;
+    background-color: rgb(229, 187, 132);
+
+}
+.fotos-pagina h2{
+    margin-left: 30px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: grey;
+
+}
+.fotos-pagina h3{
+    margin-top: 15px;
+    color: brown;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+
+}
+.fotos-pagina_logo{
+    top: -50px;
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    border:2px solid red;
+    position:absolute;
+    background-image: url('../imagenes-whiski/toro.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.fotos-pagina_mobil{
+    display: flex;
+    width:100%;
+    margin-bottom: 30px;
+    overflow: auto;
+    overflow-y: hidden;
+    border-bottom: 1px solid black;
+    gap: 20px;
+  
+}
+.fotos-pagina_mobil-1img{
+    min-width:320px;
+    height:470px;
+    background-image: url('../imagenes-whiski/mobilini.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fotos-pagina_mobil-2img{
+    min-width:290px;
+    height:470px;
+
+    background-image: url('../imagenes-whiski/mobil2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fotos-pagina_mobil-3img{
+    min-width:320px;
+    height:470px;
+   
+    background-image: url('../imagenes-whiski/mobil3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fotos-pagina_mobil-4img{
+    min-width:300px;
+    height:470px;
+    background-image: url('../imagenes-whiski/mobil4.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.fotos-pagina_table{
+    width: 100%;
+    display:flex;
+    overflow: auto;
+    overflow-y: hidden;
+    border-bottom: 1px solid black;
+    gap: 20px;
+}
+.fotos-pagina_table-1img{
+    min-width:320px;
+    height:470px;
+    
+    background-image: url('../imagenes-whiski/table1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.fotos-pagina_table-2img{
+    min-width:320px;
+    height:470px;
+    background-image: url('../imagenes-whiski/table2.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.fotos-pagina_table-3img{
+    min-width:320px;
+    height:470px;
+    background-image: url('../imagenes-whiski/table3.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.fotos-pagina_table-4img{
+    min-width:320px;
+    height:470px;
+    background-image: url('../imagenes-whiski/table4.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fotos-pagina_lapto{
+    display:flex;
+    gap: 20px;
+    overflow: auto;
+    overflow-y: hidden;
+    border-bottom: 1px solid black;
+  
+}
+.fotos-pagina_lapto-1img{
+
+    min-width:320px;
+    height:auto;
+    background-image: url('../imagenes-whiski/lapto1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.fotos-pagina_lapto-2img{
+    min-width:320px;
+    height:470px;
+    background-image: url('../imagenes-whiski/lapto2.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.fotos-pagina_lapto-3img{
+    min-width:320px;
+    height:470px;
+    background-image: url('../imagenes-whiski/lapto3.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.fotos-pagina_lapto-4img{
+    min-width:320px;
+    height:470px;
+    background-image: url('../imagenes-whiski/lapto4.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media(min-width:720px){
+    .fotos-pagina_mobil{
+        flex-wrap: wrap;
+        gap: 0%;
+       
+    }
+    .fotos-pagina_mobil-1img{
+        min-width:33.33% ;
+        background-size: contain;
+    }
+    .fotos-pagina_mobil-2img{
+        min-width:33.33% ;
+        background-size: contain;
+    }
+    .fotos-pagina_mobil-3img{
+        min-width:33.33% ;
+        background-size: contain;
+    }
+    .fotos-pagina_mobil-4img{
+        min-width:33.33% ;
+        background-size: contain;
+
+        
+    }
+
+
+}
+@media(min-width:920px){
+    .fotos-pagina_mobil{
+        flex-wrap: wrap;
+        padding: 30px;
+        justify-content: center;
+        gap: 10px;
+       
+    }
+    .fotos-pagina_mobil-1img{
+        min-width:20%;
+        background-size: contain;
+    }
+    .fotos-pagina_mobil-2img{
+        min-width:20%;;
+        background-size: contain;
+    }
+    .fotos-pagina_mobil-3img{
+        min-width:20%;
+        background-size: contain;
+    }
+    .fotos-pagina_mobil-4img{
+        min-width:20%;
+        background-size: contain;
+
+        
+    }
+
+
+}
+@media(min-width:720px){
+    .fotos-pagina_table{
+        flex-wrap: wrap;
+        gap:2px;
+       
+    }
+    .fotos-pagina_table-1img{
+        min-width:45% ;
+        height: 300px;
+        background-size: contain;
+    }
+    .fotos-pagina_table-2img{
+        min-width:45% ;
+        height: 300px;
+        background-size: contain;
+    }
+    .fotos-pagina_table-3img{
+        min-width:45% ;
+        height: 300px;
+        background-size: contain;
+    }
+    .fotos-pagina_table-4img{
+        min-width:45% ;
+        height: 300px;
+        background-size: contain;
+
+        
+    }
+}
+
+@media(min-width:920px){
+    .fotos-pagina_table{
+        flex-wrap: wrap;
+        gap:2px;
+        justify-content: center;
+       
+    }
+    .fotos-pagina_table-1img{
+        min-width:20% ;
+        height: 470px;
+        background-size: contain;
+    }
+    .fotos-pagina_table-2img{
+        min-width:20% ;
+        height: 470px;
+        background-size: contain;
+    }
+    .fotos-pagina_table-3img{
+        min-width:20% ;
+        height: 470px;
+        background-size: contain;
+    }
+    .fotos-pagina_table-4img{
+        min-width:20% ;
+        height: 470px;
+        background-size: contain;
+
+        
+    }
+}
+@media(min-width:920px){
+    .fotos-pagina_lapto{
+        flex-wrap: wrap;
+        gap:2px;
+        justify-content: center;
+       
+    }
+    .fotos-pagina_lapto-1img{
+        min-width:33.33% ;
+        height: 270px;
+        background-size: contain;
+    }
+    .fotos-pagina_lapto-2img{
+        min-width:33.33% ;
+        height: 270px;
+        background-size: contain;
+    }
+    .fotos-pagina_lapto-3img{
+        min-width:33.33% ;
+        height: 270px;
+        background-size: contain;
+    }
+    .fotos-pagina_lapto-4img{
+        min-width:33.33% ;
+        height: 270px;
+        background-size: contain;
+
+        
+    }
+}
+
+
+
+ .diagrama-flujo{
+    min-width: 320px;
+    width: auto;
+    padding: 20px;
+    height: auto;
+    margin-top: 35px;
+    background-color: rgb(255, 233, 143);
+ }
+ .diagrama-flujo h2{
+    width: 100%;
+    font-size: 3.5rem;
+    font-weight: 900px;
+    color: grey;
+    text-align: center;
+
+ }
+ .diagrama-flujo_img{
+    margin-top: 20px;
+    width:100%;
+    height:400px;
+    background-image: url(' ../imagenes-whiski/diaframa-flujo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+   
+ }
+ .container-button{
+    display: flex;
+    justify-content:space-evenly ;
+    background-color: rgb(255, 233, 143);
+    margin-bottom: 20px;
+ }
+
+.button button{
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.button2 button{
+    background-color:burlywood;
+    width: 100px;
+    height: 50px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+footer{
+    background-color: black;
+    height: auto;   
+    padding: 30px; 
+    display: flex;
+    justify-content: space-around;
+
+}
+
+footer div a span{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../imagenes-whiski/toro.png');
+}
+
+footer ul{
+    display: block;
+    list-style: none;
+
+}
+footer ul li {
+    color: white;
+    font-size: 2.5rem;
+    
+}
+@media(min-width:800px){
+    footer ul{
+        display:flex;
+        gap:20px;
+    }
+}
+
+
+

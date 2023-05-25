@@ -1,0 +1,178 @@
+-var titulos =["DESTACADOS","OFERTAS DEL MES","NUEVOS INGRESOS","COCTELERIA","ULTIMAS NOTICIAS",]
+-var texb =["AGREGAR AL CARRITO","COMPRAR","CONSULTAR","CONOCER MAS","SIN STOKC","VER MAS NOTICIAS"]
+mixin items(imagen,contenido,titulo,texb,fondo)
+  .stylo_items 
+            section
+                h2=titulo
+                img(src="C:/Users/usuario/whiskipedia/whiskipedia/imagenes-whiski"+imagen , alt="whiski de alta calida")
+                .blcontenido
+                    p=contenido
+                    a(href="")  
+                        button=texb
+mixin item2(imagen,contenido,titulo,texb,fondo)
+  .stylo_item2 
+            section
+                h2=titulo
+                span=fondo
+                img(src="C:/Users/usuario/whiskipedia/whiskipedia/imagenes-whiski"+imagen , alt="whiski de alta calida")
+                .blcontenido
+                    a(href="")  
+                        button=texb
+
+
+mixin itemconfondo(imagen,contenido,titulo,texb,fondo)
+ .stylo_fondo
+       
+            section
+                .fondo=fondo
+                    h2=titulo
+                    img(src="C:/Users/usuario/whiskipedia/whiskipedia/imagenes-whiski"+imagen , alt="whiski de alta calida")
+                    .blcontenido
+                        p=contenido
+                        a(href="")  
+                            button=texb
+mixin itemconfondo2(imagen,contenido,titulo,texb,fondo)
+ .stylo_fondo2
+       
+            section
+                .fondo2=fondo
+                    h2=titulo
+                    img(src="C:/Users/usuario/whiskipedia/whiskipedia/imagenes-whiski"+imagen , alt="whiski de alta calida")
+                    .blcontenido
+                        p=contenido
+                        a(href="")  
+                            button=texb                            
+mixin etiqueta(photos,texto,precio,texb,anterior)
+    .stylo_etiquetas 
+        section 
+            img(src="C:/Users/usuario/whiskipedia/whiskipedia/imagenes-whiski/"+photos, alt="whiski de alta calida")
+            p=texto
+            span=anterior 
+            p=precio
+                
+            button=texb
+mixin noticias(imagen,subtitulo,parrafo,fecha,año)
+    .stylo_itemsnoticias
+        img(src="C:/Users/usuario/whiskipedia/whiskipedia/imagenes-whiski/"+imagen, alt="imagen de la noticia")      
+        h3 NOTCIAS 
+        h4=subtitulo
+        P=parrafo 
+            a(href="") Leer Mas...
+        hr 
+        .footernoticias 
+            p=fecha 
+                span=año 
+            ul 
+                li.iconper
+                li.iconmen     
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title whiskipedia 
+        link(rel="stylesheet", href="C:/Users/usuario/whiskipedia/whiskipedia/css-whiskipedia/whiskipedia.css")
+    body 
+      header.encabezado 
+        .encabezado_logo 
+           .encabezado_logo-img
+        .encabezado_iconos 
+            ul.encabezado_iconos-lista
+                li.encabezado_iconos-lista-maleta
+                    a(href="") 
+                      
+                li.encabezado_icono-lista-persona 
+                li.encabezado_icono-lista-lupa 
+                li.encabezado_icono-lista-menu  
+      main 
+        section.img768
+            .img 
+            .img768_texto
+                p Desde aquí, le traeremos las noticias y las historias del mundo del whisky. 
+                p Tambien le presentaremos a algunas de las personas que hacen este licor distinguido, y como trabajan tras bambalinas.
+                p Hablaremos de nuevos lanzamientos,realizaremos eventos de whisky de todo el mundo  
+            
+        //- empieza el container de novedades 
+        section.novedades
+            .novedades_items 
+                +items('/Banner-home-Regalos.png','Encontra todo lo necesario para los amantes del mundo del whiski','REGALOS',texb[1])
+                +itemconfondo('/viajes-a-escocia-3.png','','',texb[2],'')
+                +items('/Banner-home-productos.png','Descubri nuestras selectas marcas de whiski de todo el mundo ','SHOP',texb[1])
+        //-   empieza el container de destacados
+        section.container-destacados
+            h2 #{titulos[0]}
+            .destacados_items
+                +etiqueta('/absenta.jpeg','Adsenta whiski','$58.98',texb[0])
+                +etiqueta('/calavera.jpeg','Botella de calavera','$5.67',texb[0])
+                +etiqueta('balvenie.jpeg','Balvenie 155LT','$96.85',texb[0])
+            //- empieza el container de ofertas    
+        section.container-ofertas
+            h2 #{titulos[1]}
+            .ofertas_items 
+                +etiqueta('/especial.jpeg','Especial 150lt','$45.52',texb[0],'$55.10')
+                +etiqueta('josecuervo.jpeg','Jose cuervo','$35.55',texb[0],'$45.22') 
+                +etiqueta('hendris.jpeg','Hendris 55lt','$96.54',texb[0],'$120.55')
+            //-  empieza el container de colecciones   
+        section.container-coleccion 
+            .coleccion_items 
+                +item2('/Banner-home-Single-malt-1.png','','SINGLE MALT',texb[1])
+                +itemconfondo2('/collecciones-Irland-4.png','','COLECCION',texb[3],'')
+                +item2('/jackdaniel.jpeg','','WHISKEY AMERICANO',texb[1])
+            //-  empieza el container de ingresos nuevos   
+        section.container-ingresosnuevo
+            h2 #{titulos[2]}
+            .ingresos_items 
+                +etiqueta('/london.jpeg','LONDON NV','$59.96',texb[1])
+                +etiqueta('/pin.jpeg','pin para ropa','$5.00',texb[1])
+                +etiqueta('/st german.jpeg','ST GERMA NV','$75.963',texb[1]) 
+        //-    empieza el container de cocteleria
+        section.container-cocteleria
+            h2 #{titulos[3]}
+            .cocteleria_contenido 
+                img(src="C:/Users/usuario/whiskipedia/whiskipedia/imagenes-whiski/Banner-home-Coketeria-con-whisky-1536x427-1.jpg", alt="")
+                p Desde aquí, le traeremos las noticias y las historias del mundo del whisky.
+                 |También le presentaremos a algunas de las personas que hacen este licor distinguido, 
+                 | y cómo trabajan tras bambalinas
+                p Hablaremos de nuevos lanzamientos, realizaremos eventos de whisky de todo el mundo. 
+                button #{texb[3]}
+        //- empieza el container de noticias
+        section.container-noticia 
+            h2 #{titulos[4]}
+            .noticias_items 
+                +noticias('/blog-NOTICIAS240.jpg','Whiskys sin filtrado en frío (Non Chill-filtered)','En esta oportunidad vamos a hablar de un tema que ha generado mucho debate a lo largo de muchos años y que quisiera aclarar algunos puntos para que cada uno...','14 ABRIL','2021')  
+                +noticias('/noticias2.jpg','Edad del Whisky - Parte I','La edad del whisky siempre fue por muchos considerado como único signo de calidad y me gustaría poner un poco de luz sobre este tema. En esta primera entrega sobre...','23 JULIO','2022') 
+                +noticias('/noticias3.jpg','5 datos que seguro no conocías sobre el whisky escocés','Cuando uno recorre Escocia, y se adentra en algunas de las más de 100 destilerías que están a lo largo y ancho de todo el país, comienza a conocer algunos …','22 SEPTIEMBRE','2022')  
+                +noticias('/noticias4.png','Whiskies de verano','Whiskies de verano A pesar del calor sofocante de este verano, vamos a repasar un listado de whiskys “apto verano”, que se adecuen a las altas temperaturas y nos acompañen a pasar el …','2 ENERO','2020')   
+                .buttun 
+                    button #{texb[5]}
+        footer    
+            .logo_footer
+            .listas-footer  
+                ul 
+                    li NOSOTROS
+                    li NOTICIAS
+                    li COCTELERIA 
+                    li WHISKIPEDIA CLUB  
+                    li WHISKIPEDIA VIAJES
+                    li TERMINOS Y CONDICIONES
+                    li SHOP
+                    li -WHISKI
+            .lista2        
+                ul    
+                    li -VODKA 
+                    li -RON
+                    li -OTRAS BEBIDAS
+                    li -LIBROS
+                    li -GIN
+                    li -CRISTALERIA Y ACCESORIOS
+                    li -HABANOS
+                    li -COLECCIONES
+                    li CONTACTOS
+            .iconfooter
+                ul    
+                    li.iconface
+                    li.iconinta
+        .div-footer 
+                p © 2023 Whiskypedia | Todos los derechos reservados. ©    
